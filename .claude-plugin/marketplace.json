@@ -5,9 +5,9 @@
   },
   "plugins": [
     {
-      "name": "shift-plugin",
-      "source": "./plugins/shift-plugin",
-      "description": "Adds a /shift skill for processing Laravel Shift PRs"
+      "name": "shift",
+      "source": "./plugins/shift",
+      "description": "A plugin for supporting Claude work with Laravel Shift"
     }
   ]
 }

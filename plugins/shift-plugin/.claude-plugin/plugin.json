@@ -1,5 +1,0 @@
-{
-  "name": "shift-plugin",
-  "description": "Adds a /shift skill for processing Laravel Shift PRs",
-  "version": "1.0.0"
-}

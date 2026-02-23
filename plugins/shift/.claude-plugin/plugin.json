@@ -1,0 +1,5 @@
+{
+  "name": "shift",
+  "description": "A plugin for supporting Claude work with Laravel Shift",
+  "version": "1.0.1"
+}
