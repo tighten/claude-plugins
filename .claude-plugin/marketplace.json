@@ -1,0 +1,13 @@
+{
+  "name": "tighten-plugins",
+  "owner": {
+    "name": "Matt Stauffer"
+  },
+  "plugins": [
+    {
+      "name": "shift-plugin",
+      "source": "./plugins/shift-plugin",
+      "description": "Adds a /shift skill for processing Laravel Shift PRs"
+    }
+  ]
+}
