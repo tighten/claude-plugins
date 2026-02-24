@@ -42,21 +42,30 @@ Analyze what Laravel Shift has done:
 - What code changes were made?
 - Are there any breaking changes noted?
 
-## Step 5: Act on Instructions
+## Step 5: Composer Update
 
-Follow any instructions given in the PR description or comments. This typically includes:
+First, run `composer update`. If it fails with PHP version compatibility errors, check whether this is a Valet or Herd isolated site:
+1. Run `valet isolated` (if that fails, try `herd isolated`)
+2. Check if the current directory's folder name appears in the output as an isolated domain
+3. If it does, re-run as `valet composer update` (or `herd composer update` respectively)
+
+If `composer update` fails for other reasons, investigate and fix before proceeding.
+
+## Step 6: Act on Instructions
+
+Next, follow any instructions given in the PR description or comments. This typically includes:
 - Running migrations
 - Updating configuration files
 - Making code changes that Shift couldn't automate
 - Addressing deprecations
 
-## Step 6: Handle Optional Upgrades
+## Step 7: Handle Optional Upgrades
 
 For any changes marked as "optional" in the PR:
 - **Small changes** (one-liner, simple config tweaks, straightforward updates): Just do them automatically
 - **Medium to large changes** (new features, architectural changes, changes requiring decisions): Ask the user before proceeding
 
-## Step 7: Test the Application
+## Step 8: Test the Application
 
 After making changes:
 1. Run `php artisan test --compact` to verify tests pass
@@ -67,7 +76,7 @@ After making changes:
 
 Do NOT commit any changes or push to the remote. Leave all changes as uncommitted modifications in the working directory so the user can review them before committing.
 
-## Step 8: Report Back
+## Step 9: Report Back
 
 Summarize:
 - What changes were made by Shift
