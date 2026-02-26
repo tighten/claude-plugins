@@ -2,6 +2,10 @@
 name: shift
 description: Process Laravel Shift pull requests - review changes, act on instructions, and test the app
 argument-hint: [pr-number]
+tags:
+  - laravel
+  - upgrade
+  - shift
 ---
 
 # Process Laravel Shift PR #$ARGUMENTS
