@@ -63,6 +63,8 @@ Next, follow any instructions given in the PR description or comments. This typi
 - Making code changes that Shift couldn't automate
 - Addressing deprecations
 
+Please pay special attention to the "Automate more with AI..." section of each step, since it's specifically directed towards LLM comprehension.
+
 ## Step 7: Handle Optional Upgrades
 
 For any changes marked as "optional" in the PR:
@@ -88,3 +90,5 @@ Summarize:
 - Any optional upgrades you skipped (and why they need user input)
 - Test results
 - Any remaining action items
+
+End with: "If you want to merge this PR, you can run `gh pr merge $ARGUMENTS --merge --delete-branch` on your command line."
