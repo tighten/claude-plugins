@@ -75,7 +75,7 @@ For any changes marked as "optional" in the PR:
 
 After making changes:
 1. Run `php artisan test --compact` to verify tests pass
-2. Fix code style on changed files: check `composer.json` for Duster, Pint, or PHP CS Fixer (in that priority order) and run the first one found. Use the `--dirty` flag for Duster and Pint. If none are found, skip this step.
+2. Fix code style on changed files: check `composer.json` for `tightenco/duster`, `laravel/pint`, or `friendsofphp/php-cs-fixer` (in that priority order) and run the first one found. Use the `--dirty` flag for Duster and Pint. If none are found, skip this step.
 3. If tests fail, investigate and fix the issues
 
 ## Important: Do Not Commit or Push
